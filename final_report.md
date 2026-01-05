@@ -144,124 +144,28 @@ All visualizations are saved in high resolution (300 DPI) in the `images/` folde
 
 ---
 
-## 5. Conclusions
+## 5. Technical Challenges & Solutions
 
-### Main Conclusions:
-
-1. **Franchise Power:** Franchises significantly outperform standalone movies in revenue, profit, and ROI
-2. **Budget-Revenue Correlation:** Higher budgets generally correlate with higher revenues, but ROI varies widely
-3. **Genre Matters:** Science Fiction and Adventure genres show highest returns
-4. **Director Impact:** Established directors with franchise experience generate highest revenues
-5. **Quality vs Popularity:** High ratings don't always guarantee high popularity or revenue
-
-### Business Recommendations:
-
-1. **Invest in Franchises:** Building movie universes offers better financial returns
-2. **Focus on Sci-Fi/Adventure:** These genres show strongest ROI performance
-3. **Balance Budget:** While bigger budgets can generate more revenue, mid-budget films can achieve excellent ROI
-4. **Experienced Directors:** Directors with proven franchise success are valuable assets
+During the whole project, I faced challenges such as complex JSON data, data type issues, and API rate limits. Those challenges were solved by creating helper functions, converting data types, and adding delays between API requests.
 
 ---
 
-## 6. Technical Challenges & Solutions
+## 6. Tools & Technologies Used
 
-### Challenges Encountered:
-
-1. **JSON Parsing:** Nested data structures required custom extraction functions
-2. **Missing Data:** Many movies had incomplete financial information
-3. **Data Type Issues:** String columns needed conversion for text operations
-4. **API Rate Limits:** Required delays between requests
-
-### Solutions Implemented:
-
-1. Created reusable helper functions for JSON extraction
-2. Implemented robust NaN handling and filtering
-3. Added explicit data type conversions with `.astype(str)`
-4. Added 0.25-second delays between API calls
+This project was developed using Python with libraries such as Pandas, NumPy, Requests, Matplotlib, and Seaborn. I worked in a Jupyter Notebook environment, used the TMDB API to collect data, and managed the project with Git and GitHub.
 
 ---
 
-## 7. Limitations
+## 7. Files & Outputs
 
-1. **Sample Size:** Only 18 movies analyzed - larger sample would provide more robust insights
-2. **Time Period:** Movies span multiple decades with different market conditions
-3. **Inflation:** Budget and revenue figures not adjusted for inflation
-4. **Missing Variables:** Marketing spend, release strategy, competition not included
-5. **Selection Bias:** Pre-selected movie IDs may not represent typical movies
+The project includes raw, cleaned, and KPI datasets, along with an Excel file for rankings. It also contains visualization images and Jupyter notebooks for data collection, cleaning, analysis, and chart creation.
 
 ---
 
-## 8. Future Improvements
-
-1. **Larger Dataset:** Analyze 100+ movies for more statistical significance
-2. **Inflation Adjustment:** Convert all figures to constant dollars
-3. **Temporal Analysis:** Study trends by decade
-4. **Machine Learning:** Build predictive models for box office success
-5. **Sentiment Analysis:** Analyze reviews and social media
-6. **International Data:** Include international box office performance
-
----
-
-## 9. Tools & Technologies Used
-
-- **Programming Language:** Python 3.x
-- **Libraries:**
-  - `pandas` - Data manipulation and analysis
-  - `numpy` - Numerical computing
-  - `requests` - API calls
-  - `matplotlib` - Data visualization
-  - `seaborn` - Statistical graphics
-- **API:** TMDB (The Movie Database) API v3
-- **Environment:** Jupyter Notebook
-- **Version Control:** Git & GitHub
-
----
-
-## 10. Files & Outputs
-
-### Data Files:
-- `movies_raw_data.csv` - Original API data
-- `movies_clean.csv` - Cleaned dataset
-- `movies_with_kpis.csv` - Dataset with calculated KPIs
-- `movie_rankings.xlsx` - All rankings in Excel format
-
-### Visualizations (images/ folder):
-- `1_revenue_vs_budget.png`
-- `2_roi_by_genre.png`
-- `3_popularity_vs_rating.png`
-- `4_yearly_trends.png`
-- `5_franchise_vs_standalone.png`
-- `6_top_directors.png`
-- `7_top_franchises.png`
-
-### Code Files:
-- `fetch_movies.ipynb` - Data collection
-- `clean_data.ipynb` - Data cleaning
-- `analysis.ipynb` - KPI calculations and rankings
-- `visualizations.ipynb` - Chart generation
-
----
-
-## 11. Acknowledgments
-
-- **Data Source:** The Movie Database (TMDB) - https://www.themoviedb.org
-- **API Documentation:** TMDB API Documentation
-- **Learning Resources:** Pandas documentation, Matplotlib tutorials
-
----
-
-## 12. Conclusion
+## 8. Conclusion
 
 This project successfully demonstrates a complete data analysis workflow from API data collection through visualization. The analysis reveals that franchise movies are the dominant force in modern cinema, offering superior financial returns compared to standalone films. The combination of proven franchises, experienced directors, and popular genres (especially Sci-Fi and Adventure) creates the strongest recipe for box office success.
 
 The technical implementation showcases practical skills in API integration, data cleaning, statistical analysis, and data visualization - all essential competencies for data engineering and analysis roles.
 
 ---
-
-**Project Status:** ✅ Complete  
-**Date Completed:** December 2025  
-**Total Duration:** 1 week
-
----
-
-*This report was generated as part of a data engineering learning project focused on practical API usage, data manipulation with Pandas, and data visualization techniques.*
